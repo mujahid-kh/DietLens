@@ -39,4 +39,5 @@ public class DataBaseHandler extends SQLiteOpenHelper {
         sqLiteDatabase.delete(TABLE_NAME, KEY_ID + "=" + row, null);
     }
 
+
 }
