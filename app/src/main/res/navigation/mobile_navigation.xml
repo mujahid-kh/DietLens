@@ -3,41 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_feed">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.dietlens.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_feed"
+        android:name="com.example.dietlens.ui.feed.FeedFragment"
+        android:label="Feed"
+        tools:layout="@layout/fragment_feed" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.dietlens.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_diary"
+        android:name="com.example.dietlens.ui.diary.DiaryFragment"
+        android:label="Diary"
+        tools:layout="@layout/fragment_diary" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.dietlens.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_recipes"
+        android:name="com.example.dietlens.ui.recipes.RecipesFragment"
+        android:label="Recipes"
+        tools:layout="@layout/fragment_recipes" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.dietlens.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_fav"
+        android:name="com.example.dietlens.ui.favourites.FavouritesFragment"
+        android:label="Favourites"
+        tools:layout="@layout/fragment_fav" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.dietlens.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_cart"
+        android:name="com.example.dietlens.ui.cart.CartFragment"
+        android:label="Cart"
+        tools:layout="@layout/fragment_cart" />
 
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.dietlens.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
 </navigation>
