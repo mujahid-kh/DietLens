@@ -21,9 +21,9 @@
             android:icon="@drawable/baseline_favorite_24"
             android:title="Favourites" />
         <item
-            android:id="@+id/nav_cart"
+            android:id="@+id/nav_inventory"
             android:icon="@drawable/baseline_shopping_cart_24"
-            android:title="Shopping Cart" />
+            android:title="Inventory" />
 
     </group>
 
