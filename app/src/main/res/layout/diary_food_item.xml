@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/circle_primary"
+        android:id="@+id/food_img"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nutella"
+        android:id="@+id/food_name"
+        android:layout_toRightOf="@id/food_img"
+        android:layout_alignTop="@id/food_img"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ferrero, 1 serving (0.5 o.z.)"
+        android:layout_below="@id/food_name"
+        android:id="@+id/food_desc"
+        android:layout_alignLeft="@id/food_name"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/expand_btn"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_navigate_next_24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/expand_btn"
+        android:layout_centerVertical="true"
+        android:id="@+id/calorie_amount"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginRight="5dp"
+        android:text="82"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F8F8F8"
+        android:layout_below="@id/food_desc"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@id/food_desc"/>
+
+</RelativeLayout>
