@@ -23,11 +23,11 @@ public class RecipesFragment extends Fragment {
         recipesViewModel =
                 ViewModelProviders.of(this).get(RecipesViewModel.class);
         View root = inflater.inflate(R.layout.fragment_recipes, container, false);
-        final TextView textView = root.findViewById(R.id.text_recipes);
+//        final TextView textView = root.findViewById(R.id.text_recipes);
         recipesViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+//                textView.setText(s);
             }
         });
         return root;
